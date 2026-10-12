@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cobro de estacionamiento"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvDetalleEspacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Método de pago:"
+        android:layout_marginTop="24dp" />
+
+    <!-- RadioGroup: permite elegir SOLO una opción entre varias -->
+    <RadioGroup
+        android:id="@+id/rgMetodoPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbEfectivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Efectivo"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbTarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarjeta" />
+
+        <RadioButton
+            android:id="@+id/rbQrNequi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QR / Nequi" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirmarPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar pago"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvRecibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>

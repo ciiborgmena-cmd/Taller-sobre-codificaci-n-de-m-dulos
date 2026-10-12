@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva reserva"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvEspacioSeleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa del vehículo:"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej. ABC-123" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de vehículo:"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgTipoVehiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAutomovil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automóvil"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbMotocicleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motocicleta" />
+
+        <RadioButton
+            android:id="@+id/rbCamion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camión" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirmarReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar reserva"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvConfirmacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#2E7D32"
+        android:visibility="gone" />
+
+</LinearLayout>

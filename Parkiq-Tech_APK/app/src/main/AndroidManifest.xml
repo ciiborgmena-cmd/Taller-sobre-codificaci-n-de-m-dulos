@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- application: contiene la configuración general de la app -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Pakiq-Tech"
+        android:theme="@style/Theme.ParkiqTech">
+
+        <!-- MainActivity: única pantalla de esta primera app -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true">
+
+            <!-- intent-filter MAIN/LAUNCHER: indica que esta
+                 actividad es el punto de entrada de la app,
+                 es decir, la que se abre al tocar el ícono -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false"  />
+        <activity
+            android:name=".ui.cobros.CobrosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reservas.ReservaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reportes.ReportesActivity"
+            android:exported="false" />
+    </application>
+</manifest>
